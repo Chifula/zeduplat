@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeduplat - Test Me</title>
+    <link rel="stylesheet" href="../style_sheets/style.css">
+    <link rel="icon" type="image/x-icon" href="../database_folder/Untitled.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 1rem;
+        }
+
+        header .img-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .testme-module {
+            margin: 1rem auto;
+            padding: 1rem;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            margin-bottom: 2rem;
+        }
+
+        .question h2 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .options {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .option {
+            text-align: center;
+            flex: 1 1 30%;
+        }
+
+        .option img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .option p {
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+        }
+
+        .submit {
+            text-align: center;
+        }
+
+        .submit button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .submit button:hover {
+            background-color: #0056b3;
+        }
+
+        .results {
+            margin: 2rem auto;
+            max-width: 800px;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .results img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            .option {
+                flex: 1 1 100%;
+            }
+
+            .testme-module, .results {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- TestMe Header -->
+    <header>
+        <div class="img-container">
+            <img src="ZEDUPLAT.png" alt="Zeduplat Logo" id="logo">
+        </div>
+        <h1>Course Counseling Test</h1>
+        <p>Answer the questions to find your recommended course!</p>
+    </header>
+
+    <!-- TestMe Module -->
+    <section class="testme-module">
+        <!-- Question 1 -->
+         <div>
+        <div class="question">
+            <h2>What type of activities do you enjoy the most?</h2>
+            <div class="options">
+                <div class="option">
+                    <img src="education.jpeg" alt="Creative Tasks">
+                    <p>Creative Tasks (e.g., art, writing)</p>
+                </div>
+                <div class="option">
+                    <img src="logistics.jpeg" alt="Logical Thinking">
+                    <p>Logical Thinking (e.g., solving puzzles)</p>
+                </div>
+                <div class="option">
+                    <img src="technology.jpeg" alt="Technology">
+                    <p>Technology (e.g., coding, gadgets)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <h2>Which subject was your favorite in school?</h2>
+            <div class="options">
+                <div class="option">
+                    <img src="business.png" alt="business">
+                    <p>Math</p>
+                </div>
+                <div class="option">
+                    <img src="technology.png" alt="technology">
+                    <p>Science</p>
+                </div>
+                <div class="option">
+                    <img src="socialscience.png" alt="development studies">
+                    <p>English</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <h2>What type of career interests you the most?</h2>
+            <div class="options">
+                <div class="option">
+                    <img src="logistics.jpeg" alt="Engineering">
+                    <p>Engineering</p>
+                </div>
+                <div class="option">
+                    <img src="finance.jpeg" alt="Teaching">
+                    <p>Teaching</p>
+                </div>
+                <div class="option">
+                    <img src="technology.png" alt="IT">
+                    <p>Information Technology</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="submit">
+            <button onclick="showResults()">Submit</button>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="results" style="display:none;">
+        <h2>Your Recommended Course:</h2>
+        <div class="recommendation">
+            <img src="OIP.jpeg" alt="IT">
+            <p>Based on your answers, we recommend studying **Information Technology**. This field will allow you to explore your passion for technology, logical thinking, and problem-solving. A career in IT could involve software development, cybersecurity, or AI research!</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        function showResults() {
+            document.getElementById('results').style.display = 'block';
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+    </script>
+</body>
+</html>

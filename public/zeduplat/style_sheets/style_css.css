@@ -1,0 +1,28 @@
+/* Green theme styles */
+body {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.navbar {
+    background-color: #2e7d32;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar a:hover {
+    background-color: #a5d6a7;
+    color: #2e7d32;
+}
+
+button {
+    background-color: #66bb6a;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #43a047;
+}

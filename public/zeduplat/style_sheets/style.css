@@ -1,0 +1,384 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #a9dbd3; /* Dark green */
+    color: rgb(15, 17, 16);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+section.categories {
+    padding: 20px;
+    text-align: center;
+}
+
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.category {
+    background-color: #b3dacb;
+    border: 1px solid #dddddd;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.category:hover {
+    background-color: #ddd;
+}
+
+footer {
+    background-color: #333;
+    color: rgb(151, 194, 177);
+    padding: 10px;
+    text-align: center;
+}
+
+/* Background logo styling */
+img {
+    background-image: url('sherespacelogo.png'); /* Update this path accordingly */
+    background-size: 300px; /* Adjust size as needed */
+     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    opacity: 1.5; /* To make the logo subtle in the background */ 
+ }
+
+ /* Navigation bar styles */
+ .navbar {
+    display: flex;
+    justify-content: flex-start; /* Aligns navbar to the left */
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+ /* Styling for category container */
+ .category {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Styling for hover information */
+.hover-info {
+    display: none;
+    position: absolute;
+    bottom: 110%; /* Position above the image */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Show hover info when hovering over .category */
+.category:hover .hover-info {
+    display: block;
+}
+
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #333;
+}
+
+nav button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Contact Information */
+.contact-info {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Logo Section */
+.img-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.img-container img {
+    max-width: 200px;
+    height: auto;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+footer img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px;
+}
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                }
+               
+                .search-bar {
+                    text-align: center;
+                    margin: 50px;
+                }
+                .search-bar input {
+                    width: 60%;
+                    padding: 10px;
+                    font-size: 16px;
+                }
+                .categories {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+                .category {
+                    flex: 1;
+                    margin: 20px;
+                    text-align: center;
+                }
+                .category img {
+                    width: 150px;
+                    height: 150px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+                .category p {
+                    font-size: 18px;
+                    margin-top: 10px;
+                }
+        .search-bar {
+            text-align: center;
+            margin: 50px;
+        }
+
+        .search-bar input {
+            width: 60%;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .categories {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .category {
+            flex: 1;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .category img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .category p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f2f2f2;
+        }
+        
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+        }
+        
+        form {
+            background-color: #fff;
+            width: 90%;
+            max-width: 500px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        form h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+        }
+        
+        form div {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            font-weight: bold;
+            font-size: 14px;
+            color: #555;
+        }
+        
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        textarea {
+            resize: vertical;
+        }
+        
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+        
+        footer {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            margin-top: 20px;
+        }
+        
+        /* Hover Effect */
+        .form-container form:hover {
+            transform: scale(1.02);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            form {
+                padding: 20px;
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            form {
+                padding: 15px;
+            }
+        
+            label,
+            input,
+            button {
+                font-size: 14px;
+            }
+        }
+        
+

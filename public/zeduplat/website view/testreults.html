@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeduplat - Your Results</title>
+    <link rel="stylesheet" href="../style_sheets/style.css">
+    <link rel="icon" type="image/x-icon" href="../database_folder/Untitled.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+        .results-container {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+        }
+        .results-container h1 {
+            text-align: center;
+            color: #333;
+        }
+        .recommendation {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .recommendation img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .recommendation p {
+            font-size: 1rem;
+            color: #555;
+            text-align: center;
+        }
+        .graph-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .graph-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        .back-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .back-button button {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .back-button button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Course Counseling Results</h1>
+        <p>Explore the course tailored to your interests and skills!</p>
+    </header>
+
+    <div class="results-container">
+        <h1>Recommended Course</h1>
+        <div class="recommendation">
+            <img src="../database_folder/technology.jpeg" alt="Information Technology">
+            <p><strong>Information Technology</strong></p>
+            <p>Based on your answers, we recommend studying Information Technology. This exciting field allows you to explore your passion for technology, logical thinking, and problem-solving. Potential career paths include software development, cybersecurity, and artificial intelligence research.</p>
+        </div>
+
+        <div class="graph-container">
+            
+          <p><img src="graph.png" alt="Graph showing interest breakdown">YOUR INTEREST BREAKDOWN</p>
+        </div>
+    </div>
+
+    <div class="back-button">
+        <button onclick="goBack()">Take the Test Again</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = "test_me.html";
+        }
+    </script>
+</body>
+</html>
